@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.card {
+    background-image: linear-gradient(to right, green, seagreen, skyblue);
+    border-radius: 15px;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+
+.card:hover {
+    /* box-shadow: 1px 1px 5px 5px black; */
+    box-shadow: black 0px 48px 100px 0px;
+}
+
+.searchbox {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 25vw;
+    height: 8vh;
+    font-size: 20px;
+    padding: 10px;
+    background-color: lightcyan;
+}
+
+.searchInput::placeholder {
+    font-size: 15px;
+}
+
+/* .searchInput:focus {
+    padding: 10px;
+} */
+
+.btn {
+    background: lightcyan;
+    border: none;
+    border-radius: 35px;
+    margin-left: 10px;
+
+}
+
+.btn i {
+    font-size: 20px;
+    margin: 10px;
+    padding: 7px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+}
+
+.deg {
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.city {
+    margin-top: 20px;
+}
+
+.one {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.extra {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.valuebox {
+    display: none;
+    color: white;
+}
+
+.imgcontant {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imgcontant img {
+    width: 50px;
+    height: 50px;
+}
+
+.humidity {
+    margin: 0 10px;
+    font-size: 30px;
+
+}
+
+.windbox {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+
+}
+
+.windbox img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.windSpeed {
+    font-size: 30px;
+}
+
+.invalid {
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+body {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
+}
+
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(75, 75, 250, 0.3);
+    border-radius: 3px;
+}

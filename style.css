@@ -203,3 +203,27 @@ body {
     background: rgba(75, 75, 250, 0.3);
     border-radius: 3px;
 }
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+
+    .searchInput {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .searchInput {
+        width: 90%;
+    }
+
+    .extra {
+        flex-direction: column;
+        align-items: center;
+    }
+}
